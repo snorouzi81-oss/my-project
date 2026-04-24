@@ -89,7 +89,23 @@ Predicted Math Score:
 ---
 
 ## 📁 Project Structure
-
+My-project/
+│
+├── Data/
+│   └── StudentsPerformance.csv
+│
+├── Models/
+│   ├── math_model_LinearRegression.pkl
+│   ├── math_model_RandomForest.pkl
+│   └── model_columns.pkl
+│
+├── Plots/
+│
+├── Scripts/
+│   ├── main_LinearRegression.py
+│   └── main_RandomForest.py
+│
+└── README.md
 
 
 
