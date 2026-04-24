@@ -1,9 +1,19 @@
 import pandas as pd
 import joblib
+from pathlib import Path
 
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 # load model + columns
-model = joblib.load("math_model_rf.pkl")
-columns = joblib.load("model_columns.pkl")
+MODEL_PATH = BASE_DIR / "Models" / "math_model_LinearRegression.pkl"
+COLUMNS_PATH = BASE_DIR / "Models" / "model_columns.pkl"
+
+
+
+
+model = joblib.load(MODEL_PATH)
+columns = joblib.load(COLUMNS_PATH)
+#columns = joblib.load("model_columns.pkl")
 
 # new data
 new_data = pd.DataFrame({
